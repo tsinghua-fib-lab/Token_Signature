@@ -1,0 +1,226 @@
+[
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "commensenseqa",
+        "CoT_Acc": 0.8141,
+        "Direct_Answer_Acc": 0.819,
+        "CoT_mean_tokens": 212.58,
+        "DA_mean_tokens": 3.0
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "gsm8k",
+        "CoT_Acc": 0.8438,
+        "Direct_Answer_Acc": 0.3101,
+        "CoT_mean_tokens": 314.94,
+        "DA_mean_tokens": 5.71
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "MultiArith",
+        "CoT_Acc": 0.9433,
+        "Direct_Answer_Acc": 0.9483,
+        "CoT_mean_tokens": 193.42,
+        "DA_mean_tokens": 5.14
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "gpqa",
+        "Direct_Answer_Acc": 0.4688,
+        "CoT_Acc": 0.4219,
+        "CoT_mean_tokens": 667.46,
+        "DA_mean_tokens": 3.58
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "FOLIO",
+        "Direct_Answer_Acc": 0.6221,
+        "CoT_Acc": 0.6919,
+        "CoT_mean_tokens": 360.0,
+        "DA_mean_tokens": 3.0
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "ContextHub_abductive",
+        "Direct_Answer_Acc": 0.4625,
+        "CoT_Acc": 0.5692,
+        "CoT_mean_tokens": 360.33,
+        "DA_mean_tokens": 3.01
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "ContextHub_deductive",
+        "Direct_Answer_Acc": 0.4367,
+        "CoT_Acc": 0.5392,
+        "CoT_mean_tokens": 296.18,
+        "DA_mean_tokens": 3.01
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "arc_challenge",
+        "Direct_Answer_Acc": 0.9061,
+        "CoT_Acc": 0.9377,
+        "CoT_mean_tokens": 255.05,
+        "DA_mean_tokens": 3.06
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "arc_easy",
+        "Direct_Answer_Acc": 0.9407,
+        "CoT_Acc": 0.9407,
+        "CoT_mean_tokens": 231.77,
+        "DA_mean_tokens": 3.06
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "MuSR",
+        "Direct_Answer_Acc": 0.5582,
+        "CoT_Acc": 0.586,
+        "CoT_mean_tokens": 406.48,
+        "DA_mean_tokens": 2.98
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "lsat",
+        "Direct_Answer_Acc": 0.6402,
+        "CoT_Acc": 0.6194,
+        "CoT_mean_tokens": 488.74,
+        "DA_mean_tokens": 3.01
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "piqa",
+        "Direct_Answer_Acc": 0.8977,
+        "CoT_Acc": 0.8885,
+        "CoT_mean_tokens": 208.04,
+        "DA_mean_tokens": 2.99
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "siqa",
+        "Direct_Answer_Acc": 0.76,
+        "CoT_Acc": 0.7723,
+        "CoT_mean_tokens": 233.87,
+        "DA_mean_tokens": 3.02
+    },
+    {
+        "Model": "gpt-4o-mini",
+        "Benchmark": "strategyqa",
+        "Direct_Answer_Acc": 0.5419,
+        "CoT_Acc": 0.6288,
+        "CoT_mean_tokens": 206.4,
+        "DA_mean_tokens": 3.0
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "gsm8k",
+        "Direct_Answer_Acc": 0.539,
+        "CoT_Acc": 0.8514,
+        "CoT_mean_tokens": 314.56,
+        "DA_mean_tokens": 5.86
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "MultiArith",
+        "CoT_Acc": 0.935,
+        "Direct_Answer_Acc": 0.98,
+        "CoT_mean_tokens": 185.56,
+        "DA_mean_tokens": 5.54
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "gpqa",
+        "Direct_Answer_Acc": 0.4933,
+        "CoT_Acc": 0.6116,
+        "CoT_mean_tokens": 883.89,
+        "DA_mean_tokens": 3.77
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "FOLIO",
+        "Direct_Answer_Acc": 0.696,
+        "CoT_Acc": 0.7508,
+        "CoT_mean_tokens": 523.6,
+        "DA_mean_tokens": 3.0
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "ContextHub_abductive",
+        "Direct_Answer_Acc": 0.4213,
+        "CoT_Acc": 0.5942,
+        "CoT_mean_tokens": 599.96,
+        "DA_mean_tokens": 3.0
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "ContextHub_deductive",
+        "Direct_Answer_Acc": 0.53,
+        "CoT_Acc": 0.6042,
+        "CoT_mean_tokens": 425.53,
+        "DA_mean_tokens": 2.98
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "arc_challenge",
+        "Direct_Answer_Acc": 0.9377,
+        "CoT_Acc": 0.9445,
+        "CoT_mean_tokens": 372.28,
+        "DA_mean_tokens": 3.03
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "arc_easy",
+        "Direct_Answer_Acc": 0.9449,
+        "CoT_Acc": 0.9453,
+        "CoT_mean_tokens": 345.25,
+        "DA_mean_tokens": 3.05
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "MuSR",
+        "Direct_Answer_Acc": 0.5939,
+        "CoT_Acc": 0.6296,
+        "CoT_mean_tokens": 629.73,
+        "DA_mean_tokens": 3.01
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "lsat",
+        "Direct_Answer_Acc": 0.7265,
+        "CoT_Acc": 0.7592,
+        "CoT_mean_tokens": 690.96,
+        "DA_mean_tokens": 3.04
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "commensenseqa",
+        "Direct_Answer_Acc": 0.8468,
+        "CoT_Acc": 0.8411,
+        "CoT_mean_tokens": 300.5,
+        "DA_mean_tokens": 3.0
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "piqa",
+        "Direct_Answer_Acc": 0.9363,
+        "CoT_Acc": 0.9108,
+        "CoT_mean_tokens": 273.49,
+        "DA_mean_tokens": 2.96
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "siqa",
+        "Direct_Answer_Acc": 0.781,
+        "CoT_Acc": 0.7774,
+        "CoT_mean_tokens": 247.44,
+        "DA_mean_tokens": 3.02
+    },
+    {
+        "Model": "gpt-4o",
+        "Benchmark": "strategyqa",
+        "Direct_Answer_Acc": 0.5524,
+        "CoT_Acc": 0.6066,
+        "CoT_mean_tokens": 267.89,
+        "DA_mean_tokens": 2.99
+    }
+]
