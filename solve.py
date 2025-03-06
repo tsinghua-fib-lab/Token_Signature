@@ -5,11 +5,11 @@ import torch.nn.functional as F
 
 @dataclass
 class DecodingArguments:
-    encode_format: str = field(default="instruct")  # choices=["instruct", "qa", ]
-    max_new_tokens: int = field(default=512)  # 512 for `mistralai/Mistral-7B-Instruct-v0.1`, 256 for `mistralai/Mistral-7B-v0.1`
-    decoding: str = field(default="greedy")  # choices=["greedy", "cot", ]
+    encode_format: str = field(default="instruct")  
+    max_new_tokens: int = field(default=512)  
+    decoding: str = field(default="greedy")  
     cot_n_branches: int = field(default=10)
-    cot_aggregate: str = field(default="max")  # choices=["max", "sum", "self_consistency", ]
+    cot_aggregate: str = field(default="max") 
     benchmark: str = field(default="gsm8k")
 
 

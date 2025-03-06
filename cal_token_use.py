@@ -2,16 +2,13 @@ import json
 import argparse
 
 def compute_token_use(input_file,  result_path,model,benchmark):
-    # 存储所有Spearman相关系数
     total_len_probs = 0
     num_rows = 0
-    # 打开输入和输出文件
     with open(input_file, 'r', encoding='utf-8') as fin:
         
         for line_num, line in enumerate(fin, 1):
             try:
                 data = json.loads(line)
-                # 获取 "len_probs" 并累加
                 total_len_probs += data.get("len_probs", 0)
                 num_rows += 1
   
@@ -21,8 +18,6 @@ def compute_token_use(input_file,  result_path,model,benchmark):
             except Exception as e:
                 print(f"第 {line_num} 行处理错误: {e}")
 
-    
-    # 计算均值
     if num_rows > 0:
         avg_len_probs = total_len_probs / num_rows
     else:
@@ -39,12 +34,9 @@ def compute_token_use(input_file,  result_path,model,benchmark):
             "DA_mean_tokens":round(avg_len_probs,2)
         }
 
-
     with open(file_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
 
-
-    # 遍历数据，找到目标并更新
     found = False
     for item in data:
         if item.get("Model") == model and item.get("Benchmark") == benchmark:
@@ -52,7 +44,6 @@ def compute_token_use(input_file,  result_path,model,benchmark):
             found = True
             break
 
-    # 如果没有找到目标条目，添加新的记录
     if not found:
         data.append({
             "Model": model,
@@ -60,7 +51,6 @@ def compute_token_use(input_file,  result_path,model,benchmark):
             **new_elements
         })
 
-    # 将更新后的数据写回文件
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 

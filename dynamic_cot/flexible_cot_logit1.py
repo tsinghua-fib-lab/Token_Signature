@@ -10,13 +10,13 @@ from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.tree import DecisionTreeClassifier
 
-# 定义文件路径和相关变量
+
 benchmarks = ["gsm8k","MultiArith","gpqa","FOLIO","ContextHub_abductive","ContextHub_deductive",
               "arc_challenge","arc_easy","MuSR","lsat","commensenseqa","piqa","siqa","strategyqa"]   #
 model_type = ["llama","microsoft","mistralai","llama"]
 model_all = ["Llama-3.2-3B-Instruct","Phi-3.5-mini-instruct","Mistral-7B-Instruct-v0.3","Llama-3.1-8B-Instruct"]
 
-# 计算准确率
+
 def custom_accuracy(test_labels, y_pred,test_cot_token_use,test_da_token_use):
     test_labels = np.array(test_labels)
     y_pred = np.array(y_pred)
@@ -41,17 +41,13 @@ def custom_accuracy(test_labels, y_pred,test_cot_token_use,test_da_token_use):
     return accuracy,pred_token_use
 
 
-#最大化分类准确度
 def find_best_threshold(X, y):
-    thresholds = np.sort(X)  # 将特征值排序
+    thresholds = np.sort(X)  
     best_accuracy = 0
     best_threshold = None
 
     for t in thresholds:
-        # 根据阈值进行分类
         predictions = (X > t).astype(int)
-        
-        # 计算分类准确率
         accuracy = (predictions == y).mean()
         
         if accuracy > best_accuracy:
@@ -61,10 +57,10 @@ def find_best_threshold(X, y):
     return best_threshold, best_accuracy
 index=1
 benchmark=benchmarks[3]
-# # 遍历基准和模型，提取数据
+
 for index in range(len(model_all)):
     for benchmark in benchmarks:
-        # 动态设置文件路径
+
         # if benchmark=="gsm8k":
         cot_path = f"outputs/{benchmark}/{model_type[index]}/cot/{model_all[index]}.jsonl"
         direct_answer_path = f"outputs/{benchmark}/{model_type[index]}/direct_answer/{model_all[index]}.jsonl"
@@ -96,7 +92,7 @@ for index in range(len(model_all)):
             direct_answer_lines_initial = [json.loads(line) for line in direct_answer_file_initial]
 
         print(len(standard_lines),len(cot_lines_initial),len(direct_answer_lines_initial))
-        # 提取特征和标签
+
         for i in range(len(standard_lines)):
             spearman_correlation = standard_lines[i]["spearman_correlation"]
             cot_token_use.append(cot_lines_initial[i]['len_probs'])
@@ -121,23 +117,14 @@ for index in range(len(model_all)):
 
         data = list(zip(problem_index, features, labels,cot_token_use,da_token_use))
 
-
-
         # if index==0 and benchmark=="ContextHub_abductive":
         filtered_data = [item for item in data if item[2] in [0, 1]]
 
-        # 随机选取 50 条数据作为训练集
         random.seed(42) 
         random.shuffle(filtered_data)
         train_data = random.sample(filtered_data, 50)
 
-        # 剩余数据作为测试集
         test_data = [item for item in data if item not in train_data]
-
-
-        # train_data, test_data = train_test_split(data, test_size=0.3, random_state=42)
-
-
 
 
         train_problem_index, train_features, train_labels,train_cot_token_use,train_da_token_use = zip(*train_data)
@@ -156,71 +143,24 @@ for index in range(len(model_all)):
         test_cot_token_use=np.array(test_cot_token_use)
         test_da_token_use=np.array(test_da_token_use)
 
-
-
-        # print(f"Filtered training set size: {len(train_labels_filtered)}")
-        # print(len(train_features_filtered),len(train_labels_filtered))
         
         label_distribution = Counter(train_labels_filtered)
 
-        # 检查标签类别数量
         if len(label_distribution) < 2:
             continue
-        ############ 逻辑回归模型###################
-        logreg = LogisticRegression()         #class_weight='balanced'
-        logreg.fit(train_features_filtered, train_labels_filtered)  #class_weight='balanced'
-
-
-        #############
-        # param_grid = {
-        #     'C': [0.001, 0.01, 0.1, 1, 10, 100],  # 正则化强度
-        #     'penalty': ['l2'],  # 惩罚项 (l1: Lasso, l2: Ridge)
-        #     'solver': ['liblinear']  # `liblinear` 支持 L1 和 L2 惩罚项
-        # }
-
-        # # 初始化逻辑回归模型
-        # logreg = LogisticRegression()
-
-        # # 设置 GridSearchCV 进行超参数搜索
-        # grid_search = GridSearchCV(logreg, param_grid, cv=5, scoring='accuracy', n_jobs=-1)
-
-        # # 训练 GridSearchCV
-        # grid_search.fit(train_features_filtered, train_labels_filtered)
-
-        # # 输出最优参数
-        # print("最佳参数:", grid_search.best_params_)
-        # print("最佳交叉验证准确率:", grid_search.best_score_)
-
-        # # 获取最优模型
-        # best_logreg = grid_search.best_estimator_
-        # logreg=best_logreg
-        # 在测试集上评估
-        # test_accuracy = best_logreg.score(test_features_filtered, test_labels_filtered)
-        # print("测试集准确率:", test_accuracy)
-        ##############################3
-
-
-        # L2 正则化，正则化强度 C = 0.1（强正则化）
-        # logreg = LogisticRegression(penalty='l2', C=0.1)
-        # logreg.fit(train_features_filtered, train_labels_filtered)
-        # L1 正则化，需要使用 'liblinear' 或 'saga' solver
-        # logreg = LogisticRegression(penalty='l1', solver='liblinear', C=0.1)
-        # logreg.fit(train_features_filtered, train_labels_filtered)
-        
+        ############ Logit regression###################
+        logreg = LogisticRegression()         
+        logreg.fit(train_features_filtered, train_labels_filtered) 
 
         y_pred_prob_train = logreg.predict_proba(train_features_filtered)[:, 1]
 
         threshold = 0.5
         y_pred_train = (y_pred_prob_train >= threshold).astype(int)
 
-        # 训练集准确率
         accuracy = accuracy_score(train_labels_filtered, y_pred_train)
         print(benchmark,model_all[index])
-        # print(f"训练集预测准确率: {accuracy:.2f}")
-        # print(train_labels_filtered, y_pred_train)
-        
 
-        # 预测集准确率 test_features, test_labels
+        # test_acc test_features, test_labels
         y_pred_prob = logreg.predict_proba(test_features)[:, 1]
         threshold = 0.5
         y_pred = (y_pred_prob >= threshold).astype(int)
@@ -231,22 +171,17 @@ for index in range(len(model_all)):
         with open(pred_output_file_path, 'w') as file:
             json.dump(data, file, indent=4)
 
-        # 获取权重和截距
         w = logreg.coef_[0][0]  # 逻辑回归的权重
         b = logreg.intercept_[0]  # 截距
 
-        # 计算原始特征对应的阈值
         x_threshold = -b / w
-        # 限制阈值在特征范围内
         x_threshold_clipped = np.clip(x_threshold, -1, 1)
 
         #################最大化分类准确率###########################
         best_threshold, best_accuracy = find_best_threshold(train_features_filtered, train_labels_filtered)
         y_pred = (test_features > best_threshold).astype(int)
         print(benchmark,model_all[index])
-        # 计算测试集的准确率
         enumerate_test_accuracy,enumerate_pred_token_use = custom_accuracy(test_labels, y_pred,test_cot_token_use,test_da_token_use)
-        # print(f"测试集分类准确率: {accuracy:.3f}")
         print(best_threshold)
 
         new_elements = {

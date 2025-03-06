@@ -37,10 +37,8 @@ def main():
         print(f"{args.output_name} exist!!!!!!!!!!!!!!!!!!!!!!")
         sys.exit(0)
 
-    # 设置使用的 GPU
     device = torch.device(f'cuda:{args.gpu_id}' if torch.cuda.is_available() else 'cpu')
 
-    # 确定 benchmark
     benchmark = args.benchmark
     if benchmark in ["gsm8k", "MultiArith", "MATH"]:
         task = AnswerTask(encode_format=args.encode_format, decoding=args.decoding, data_file=args.data_file,model=args.model)
@@ -49,8 +47,6 @@ def main():
     else:
         task = ChoiceTask(encode_format=args.encode_format, decoding=args.decoding,model=args.model)
         use_answer_task = False
-
-        # 加载模型和分词器
         if args.experiment == "cot":
             sampling_params = SamplingParams(temperature=0.0, top_p=1.0, max_tokens=args.max_new_tokens)
             llm = LLM(model=args.model_name_or_path)
@@ -60,11 +56,9 @@ def main():
     total = 0
     correct = 0
 
-    # 确保输出目录存在
     os.makedirs(os.path.dirname(args.output_name), exist_ok=True)
     os.makedirs(os.path.dirname(args.result_path), exist_ok=True)
 
-    # 存储所有结果的列表
     results = []
 
     with open(args.data_file, 'r', encoding='utf-8') as data_f, \
@@ -81,7 +75,7 @@ def main():
             output_example = json.loads(output_line)
 
             # 获取 prompt 和 generated_text
-            prompt = data_example.get("prompt") or data_example.get("question")  # 根据实际字段调整
+            prompt = data_example.get("prompt") or data_example.get("question")  
             generated_text = output_example.get("generated_text")
 
             if not prompt or not generated_text:
@@ -101,7 +95,7 @@ def main():
                         try:
                             extracted_answer=float(extracted_answer.replace(",", ""))
                             if extracted_answer.is_integer():
-                                extracted_answer = str(int(extracted_answer))  # 如果是整数，转换为整数
+                                extracted_answer = str(int(extracted_answer))  
                             else:
                                 extracted_answer = str(extracted_answer)
                         except:
@@ -146,16 +140,13 @@ def main():
                     elif args.experiment == "direct_answer":
                         extracted_answer, _ = task.extract_model_answer(generated_text)
 
-            # 获取 correct_answer
             correct_answer = data_example.get("answer", "[invalid]")
 
-            # 判断是否正确
             is_correct = (extracted_answer == correct_answer)
             if is_correct:
                 correct += 1
             total += 1
             
-            # 生成结果字典
             if use_answer_task:
                 filtered_output_example = {
                     "extracted_answer": extracted_answer,
@@ -177,13 +168,10 @@ def main():
                         "is_correct": is_correct
                     }
             
-            # 将结果添加到列表中
             results.append(filtered_output_example)
 
-    # 计算正确率
     accuracy = correct / total if total > 0 else 0.0
 
-    # 将结果写入 output_name 文件（一次性写入所有结果）
     with open(args.output_name, 'w', encoding='utf-8') as out_f:
         for result in results:
             json.dump(result, out_f, ensure_ascii=False)
@@ -199,23 +187,19 @@ def main():
             "CoT_Acc":round(accuracy,4)
         }
 
-    # 条件：指定的 Model 和 Benchmark
     target_model = args.model
     target_benchmark = args.benchmark
 
-    # 检查文件是否存在
     if not os.path.exists(file_path):
         with open(file_path, 'w', encoding='utf-8') as file:
             json.dump([], file, ensure_ascii=False, indent=4)
 
-    # 读取 JSON 文件
     with open(file_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
 
     if not isinstance(data, list):
         raise ValueError("JSON 文件内容不是列表，请检查文件格式！")
 
-    # 遍历数据，找到目标并更新
     found = False
     for item in data:
         if item.get("Model") == target_model and item.get("Benchmark") == target_benchmark:
@@ -223,7 +207,6 @@ def main():
             found = True
             break
 
-    # 如果没有找到目标条目，添加新的记录
     if not found:
         data.append({
             "Model": target_model,
@@ -231,7 +214,6 @@ def main():
             **new_elements
         })
 
-    # 将更新后的数据写回文件
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 

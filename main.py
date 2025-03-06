@@ -122,18 +122,6 @@ def main():
             
         pbar.set_postfix(acc=np.mean(accs_all))
 
-    # output_fname = main_args.output_fname
-    # while os.path.exists(output_fname):
-    #     opt = None
-    #     while opt not in ['y', 'n']:
-    #         opt = input("{} exists. Do you want to overwrite? [y/n] - ")
-    #     if opt == 'y':
-    #         break
-    #     else:
-    #         output_fname = input("Input a new filename: ")
-    # if output_fname != main_args.output_fname:
-    #     print("OK, will save to", output_fname)
-
     os.makedirs(os.path.dirname(main_args.output_fname), exist_ok=True)
     with open(main_args.output_fname, "w") as f:
         for output in outputs_all:

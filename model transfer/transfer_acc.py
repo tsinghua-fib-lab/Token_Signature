@@ -10,13 +10,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.tree import DecisionTreeClassifier
 
-# 定义文件路径和相关变量
 benchmarks = ["gsm8k","MultiArith","gpqa","FOLIO","ContextHub_abductive","ContextHub_deductive",
               "arc_challenge","arc_easy","MuSR","lsat","commensenseqa","piqa","siqa","strategyqa"]   #
 # model_type = ["llama","microsoft","mistralai","llama"]
 model_all = ["gpt-4o-mini","gpt-4o"]
 
-# 计算准确率
+
 def custom_accuracy(test_labels, y_pred,test_cot_token_use,test_da_token_use):
     test_labels = np.array(test_labels)
     y_pred = np.array(y_pred)
@@ -41,17 +40,13 @@ def custom_accuracy(test_labels, y_pred,test_cot_token_use,test_da_token_use):
     return accuracy,pred_token_use
 
 
-#最大化分类准确度
 def find_best_threshold(X, y):
     thresholds = np.sort(X)  # 将特征值排序
     best_accuracy = 0
     best_threshold = None
 
     for t in thresholds:
-        # 根据阈值进行分类
         predictions = (X > t).astype(int)
-        
-        # 计算分类准确率
         accuracy = (predictions == y).mean()
         
         if accuracy > best_accuracy:
@@ -61,10 +56,9 @@ def find_best_threshold(X, y):
     return best_threshold, best_accuracy
 index=1
 benchmark=benchmarks[3]
-# # 遍历基准和模型，提取数据
+
 for index in range(len(model_all)):
     for benchmark in benchmarks:
-        # 动态设置文件路径
         # if benchmark=="gsm8k":
         cot_path = f"model_transfer/outputs_openai/{benchmark}/{model_all[index]}/cot/{model_all[index]}.jsonl"
         direct_answer_path = f"model_transfer/outputs_openai/{benchmark}/{model_all[index]}/direct_answer/{model_all[index]}.jsonl"
@@ -77,7 +71,6 @@ for index in range(len(model_all)):
         # vote_file_path = f'outputs/{benchmark}/vote_pred.json'
         vote_file_path = f'outputs/{benchmark}/vote_pred.json'
 
-        # features = []
         labels = []
         problem_index=[]
         cot_token_use=[]
@@ -95,7 +88,7 @@ for index in range(len(model_all)):
             direct_answer_lines_initial = [json.loads(line) for line in direct_answer_file_initial]
 
         print(len(cot_lines_initial),len(direct_answer_lines_initial))
-        # 提取特征和标签
+
         for i in range(len(cot_lines_initial)):
             cot_token_use.append(cot_lines_initial[i]['len_token'])
             da_token_use.append(direct_answer_lines_initial[i]['len_token'])
