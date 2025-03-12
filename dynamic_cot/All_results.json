@@ -154,17 +154,6 @@
         "DA_mean_tokens": 4.28
     },
     {
-        "Model": "Llama-3.2-3B-Instruct",
-        "Benchmark": "sst-2",
-        "Direct_Answer_Acc": 0.8979,
-        "CoT_Acc": 0.8899,
-        "Instance_SC": -0.023,
-        "Aggregated_SC": -0.3471,
-        "cot_gain": -0.008000000000000007,
-        "CoT_mean_tokens": 168.51,
-        "DA_mean_tokens": 4.0
-    },
-    {
         "Model": "Mistral-7B-Instruct-v0.3",
         "Benchmark": "gsm8k",
         "Direct_Answer_Acc": 0.0834,
@@ -317,17 +306,6 @@
         "cot_gain": 0.032299999999999995,
         "CoT_mean_tokens": 98.02,
         "DA_mean_tokens": 6.07
-    },
-    {
-        "Model": "Mistral-7B-Instruct-v0.3",
-        "Benchmark": "sst-2",
-        "Direct_Answer_Acc": 0.9255,
-        "CoT_Acc": 0.9163,
-        "Instance_SC": 0.2051,
-        "Aggregated_SC": -0.3955,
-        "cot_gain": -0.009199999999999986,
-        "CoT_mean_tokens": 62.48,
-        "DA_mean_tokens": 4.61
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -484,17 +462,6 @@
         "DA_mean_tokens": 4.05
     },
     {
-        "Model": "Phi-3.5-mini-instruct",
-        "Benchmark": "sst-2",
-        "Direct_Answer_Acc": 0.9232,
-        "CoT_Acc": 0.914,
-        "Instance_SC": -0.1491,
-        "Aggregated_SC": -0.6284,
-        "cot_gain": -0.009199999999999986,
-        "CoT_mean_tokens": 199.85,
-        "DA_mean_tokens": 4.0
-    },
-    {
         "Model": "Llama-3.1-8B-Instruct",
         "Benchmark": "gsm8k",
         "Direct_Answer_Acc": 0.1425,
@@ -647,36 +614,5 @@
         "cot_gain": -0.046699999999999964,
         "CoT_mean_tokens": 189.51,
         "DA_mean_tokens": 4.31
-    },
-    {
-        "Model": "Llama-3.1-8B-Instruct",
-        "Benchmark": "sst-2",
-        "Direct_Answer_Acc": 0.9312,
-        "CoT_Acc": 0.9232,
-        "Instance_SC": -0.1713,
-        "Aggregated_SC": -0.2611,
-        "cot_gain": -0.008000000000000007,
-        "CoT_mean_tokens": 164.9,
-        "DA_mean_tokens": 4.0
-    },
-    {
-        "Model": "Llama-3.2-3B-Instruct",
-        "Benchmark": "crows",
-        "Instance_SC": -0.1538
-    },
-    {
-        "Model": "Phi-3.5-mini-instruct",
-        "Benchmark": "crows",
-        "Instance_SC": -0.3158
-    },
-    {
-        "Model": "Mistral-7B-Instruct-v0.3",
-        "Benchmark": "crows",
-        "Instance_SC": -0.1983
-    },
-    {
-        "Model": "Llama-3.1-8B-Instruct",
-        "Benchmark": "crows",
-        "Instance_SC": -0.1417
     }
 ]

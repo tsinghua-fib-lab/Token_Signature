@@ -8,7 +8,11 @@
         "Aggregated_SC": 0.208,
         "cot_gain": 0.6376,
         "CoT_mean_tokens": 217.82,
-        "DA_mean_tokens": 5.09
+        "DA_mean_tokens": 5.09,
+        "Number": 1319,
+        "z-test": 33.393098602371424,
+        "p": 0.0,
+        "Significance": "Positive"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -19,7 +23,11 @@
         "Aggregated_SC": 0.2904,
         "cot_gain": 0.6783,
         "CoT_mean_tokens": 114.38,
-        "DA_mean_tokens": 4.59
+        "DA_mean_tokens": 4.59,
+        "Number": 600,
+        "z-test": 23.596420550584973,
+        "p": 0.0,
+        "Significance": "Positive"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -30,7 +38,11 @@
         "Aggregated_SC": -0.1042,
         "cot_gain": -0.10709999999999997,
         "CoT_mean_tokens": 729.99,
-        "DA_mean_tokens": 4.03
+        "DA_mean_tokens": 4.03,
+        "Number": 448,
+        "z-test": -3.426020262163706,
+        "p": 0.0006124946891175043,
+        "Significance": "Negative"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -41,7 +53,11 @@
         "Aggregated_SC": 0.0488,
         "cot_gain": 0.06310000000000004,
         "CoT_mean_tokens": 330.34,
-        "DA_mean_tokens": 3.88
+        "DA_mean_tokens": 3.88,
+        "Number": 1204,
+        "z-test": 3.107570923717961,
+        "p": 0.001886317176612362,
+        "Significance": "Positive"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -52,7 +68,11 @@
         "Aggregated_SC": -0.0323,
         "cot_gain": 0.016700000000000048,
         "CoT_mean_tokens": 250.42,
-        "DA_mean_tokens": 3.53
+        "DA_mean_tokens": 3.53,
+        "Number": 2400,
+        "z-test": 1.218010641200614,
+        "p": 0.22321992899097887,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -63,7 +83,11 @@
         "Aggregated_SC": 0.2671,
         "cot_gain": 0.1995,
         "CoT_mean_tokens": 256.69,
-        "DA_mean_tokens": 3.89
+        "DA_mean_tokens": 3.89,
+        "Number": 2400,
+        "z-test": 15.095925620752407,
+        "p": 0.0,
+        "Significance": "Positive"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -74,7 +98,11 @@
         "Aggregated_SC": -0.4597,
         "cot_gain": 0.040100000000000025,
         "CoT_mean_tokens": 238.37,
-        "DA_mean_tokens": 4.03
+        "DA_mean_tokens": 4.03,
+        "Number": 1172,
+        "z-test": 2.1592602912677665,
+        "p": 0.030829978933030855,
+        "Significance": "Positive"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -85,7 +113,11 @@
         "Aggregated_SC": -0.6061,
         "cot_gain": 0.009299999999999975,
         "CoT_mean_tokens": 231.37,
-        "DA_mean_tokens": 4.07
+        "DA_mean_tokens": 4.07,
+        "Number": 2376,
+        "z-test": 0.8727101019488279,
+        "p": 0.3828211101068075,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -96,7 +128,11 @@
         "Aggregated_SC": -0.4016,
         "cot_gain": -0.060899999999999954,
         "CoT_mean_tokens": 170.98,
-        "DA_mean_tokens": 4.06
+        "DA_mean_tokens": 4.06,
+        "Number": 756,
+        "z-test": -2.370184073914021,
+        "p": 0.01777923118478264,
+        "Significance": "Negative"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -107,7 +143,11 @@
         "Aggregated_SC": -0.418,
         "cot_gain": -0.00990000000000002,
         "CoT_mean_tokens": 386.84,
-        "DA_mean_tokens": 4.01
+        "DA_mean_tokens": 4.01,
+        "Number": 1009,
+        "z-test": -0.4534613902029996,
+        "p": 0.650216539352622,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -118,7 +158,11 @@
         "Aggregated_SC": -0.3424,
         "cot_gain": 0.01639999999999997,
         "CoT_mean_tokens": 186.32,
-        "DA_mean_tokens": 5.32
+        "DA_mean_tokens": 5.32,
+        "Number": 1221,
+        "z-test": 0.8580189914452965,
+        "p": 0.39088197673379077,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -129,7 +173,11 @@
         "Aggregated_SC": -0.534,
         "cot_gain": 0.01739999999999997,
         "CoT_mean_tokens": 178.08,
-        "DA_mean_tokens": 4.94
+        "DA_mean_tokens": 4.94,
+        "Number": 1838,
+        "z-test": 1.244981743440932,
+        "p": 0.2131384611275644,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -140,7 +188,11 @@
         "Aggregated_SC": -0.7639,
         "cot_gain": 0.0036000000000000476,
         "CoT_mean_tokens": 166.38,
-        "DA_mean_tokens": 4.64
+        "DA_mean_tokens": 4.64,
+        "Number": 1954,
+        "z-test": 0.23244345011367037,
+        "p": 0.8161936046013738,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.2-3B-Instruct",
@@ -151,18 +203,11 @@
         "Aggregated_SC": -0.3918,
         "cot_gain": -0.131,
         "CoT_mean_tokens": 212.67,
-        "DA_mean_tokens": 4.28
-    },
-    {
-        "Model": "Llama-3.2-3B-Instruct",
-        "Benchmark": "sst-2",
-        "Direct_Answer_Acc": 0.8979,
-        "CoT_Acc": 0.8899,
-        "Instance_SC": -0.023,
-        "Aggregated_SC": -0.3471,
-        "cot_gain": -0.008000000000000007,
-        "CoT_mean_tokens": 168.51,
-        "DA_mean_tokens": 4.0
+        "DA_mean_tokens": 4.28,
+        "Number": 2290,
+        "z-test": -10.00100298328608,
+        "p": 0.0,
+        "Significance": "Negative"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -173,7 +218,11 @@
         "Aggregated_SC": 0.4286,
         "cot_gain": 0.4124,
         "CoT_mean_tokens": 241.32,
-        "DA_mean_tokens": 8.6
+        "DA_mean_tokens": 8.6,
+        "Number": 1319,
+        "z-test": 23.349377217381512,
+        "p": 0.0,
+        "Significance": "Positive"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -184,7 +233,11 @@
         "Aggregated_SC": 0.2781,
         "cot_gain": 0.6334,
         "CoT_mean_tokens": 157.25,
-        "DA_mean_tokens": 7.49
+        "DA_mean_tokens": 7.49,
+        "Number": 600,
+        "z-test": 22.012171643958524,
+        "p": 0.0,
+        "Significance": "Positive"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -195,7 +248,11 @@
         "Aggregated_SC": -0.4995,
         "cot_gain": -0.04019999999999996,
         "CoT_mean_tokens": 477.52,
-        "DA_mean_tokens": 18.54
+        "DA_mean_tokens": 18.54,
+        "Number": 448,
+        "z-test": -1.2836473200769878,
+        "p": 0.19926538465195676,
+        "Significance": "None"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -206,7 +263,11 @@
         "Aggregated_SC": -0.089,
         "cot_gain": -0.015800000000000036,
         "CoT_mean_tokens": 113.75,
-        "DA_mean_tokens": 7.75
+        "DA_mean_tokens": 7.75,
+        "Number": 1204,
+        "z-test": -0.7753345885327813,
+        "p": 0.4381419759428258,
+        "Significance": "None"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -217,7 +278,11 @@
         "Aggregated_SC": -0.4536,
         "cot_gain": 0.021999999999999964,
         "CoT_mean_tokens": 129.33,
-        "DA_mean_tokens": 11.56
+        "DA_mean_tokens": 11.56,
+        "Number": 2400,
+        "z-test": 1.643903012313649,
+        "p": 0.10019623785022169,
+        "Significance": "None"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -228,7 +293,11 @@
         "Aggregated_SC": -0.5099,
         "cot_gain": -0.031200000000000006,
         "CoT_mean_tokens": 125.95,
-        "DA_mean_tokens": 9.95
+        "DA_mean_tokens": 9.95,
+        "Number": 2400,
+        "z-test": -2.1862016079278526,
+        "p": 0.02880085868972282,
+        "Significance": "Negative"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -239,7 +308,11 @@
         "Aggregated_SC": -0.694,
         "cot_gain": 0.028200000000000003,
         "CoT_mean_tokens": 144.55,
-        "DA_mean_tokens": 11.52
+        "DA_mean_tokens": 11.52,
+        "Number": 1172,
+        "z-test": 1.5773541514171594,
+        "p": 0.11471405877623853,
+        "Significance": "None"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -250,7 +323,11 @@
         "Aggregated_SC": -0.6641,
         "cot_gain": 0.02310000000000001,
         "CoT_mean_tokens": 119.36,
-        "DA_mean_tokens": 9.41
+        "DA_mean_tokens": 9.41,
+        "Number": 2376,
+        "z-test": 2.2833879510602446,
+        "p": 0.02240752637062937,
+        "Significance": "Positive"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -261,7 +338,11 @@
         "Aggregated_SC": -0.452,
         "cot_gain": -0.014499999999999957,
         "CoT_mean_tokens": 220.77,
-        "DA_mean_tokens": 9.69
+        "DA_mean_tokens": 9.69,
+        "Number": 756,
+        "z-test": -0.5651133092971213,
+        "p": 0.5719966963950758,
+        "Significance": "None"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -272,7 +353,11 @@
         "Aggregated_SC": -0.5528,
         "cot_gain": -0.01579999999999998,
         "CoT_mean_tokens": 238.42,
-        "DA_mean_tokens": 16.22
+        "DA_mean_tokens": 16.22,
+        "Number": 1009,
+        "z-test": -0.7122995120482476,
+        "p": 0.4762793261419245,
+        "Significance": "None"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -283,7 +368,11 @@
         "Aggregated_SC": -0.4242,
         "cot_gain": 0.018100000000000005,
         "CoT_mean_tokens": 112.47,
-        "DA_mean_tokens": 5.67
+        "DA_mean_tokens": 5.67,
+        "Number": 1221,
+        "z-test": 0.9761470685054608,
+        "p": 0.32899158920745686,
+        "Significance": "None"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -294,7 +383,11 @@
         "Aggregated_SC": -0.6692,
         "cot_gain": -0.015699999999999936,
         "CoT_mean_tokens": 108.49,
-        "DA_mean_tokens": 15.2
+        "DA_mean_tokens": 15.2,
+        "Number": 1838,
+        "z-test": -1.2128496018331405,
+        "p": 0.22518732721997248,
+        "Significance": "None"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -305,7 +398,11 @@
         "Aggregated_SC": -0.7729,
         "cot_gain": -0.009200000000000097,
         "CoT_mean_tokens": 111.61,
-        "DA_mean_tokens": 8.28
+        "DA_mean_tokens": 8.28,
+        "Number": 1954,
+        "z-test": -0.5959464629512663,
+        "p": 0.5512109924608386,
+        "Significance": "None"
     },
     {
         "Model": "Mistral-7B-Instruct-v0.3",
@@ -316,18 +413,11 @@
         "Aggregated_SC": -0.761,
         "cot_gain": 0.032299999999999995,
         "CoT_mean_tokens": 98.02,
-        "DA_mean_tokens": 6.07
-    },
-    {
-        "Model": "Mistral-7B-Instruct-v0.3",
-        "Benchmark": "sst-2",
-        "Direct_Answer_Acc": 0.9255,
-        "CoT_Acc": 0.9163,
-        "Instance_SC": 0.2051,
-        "Aggregated_SC": -0.3955,
-        "cot_gain": -0.009199999999999986,
-        "CoT_mean_tokens": 62.48,
-        "DA_mean_tokens": 4.61
+        "DA_mean_tokens": 6.07,
+        "Number": 2290,
+        "z-test": 3.0236171272476846,
+        "p": 0.0024977232176570663,
+        "Significance": "Positive"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -338,7 +428,11 @@
         "Aggregated_SC": 0.6569,
         "cot_gain": 0.5989,
         "CoT_mean_tokens": 444.11,
-        "DA_mean_tokens": 13.78
+        "DA_mean_tokens": 13.78,
+        "Number": 1319,
+        "z-test": 30.778280732936704,
+        "p": 0.0,
+        "Significance": "Positive"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -349,7 +443,11 @@
         "Aggregated_SC": 0.616,
         "cot_gain": 0.4084,
         "CoT_mean_tokens": 217.34,
-        "DA_mean_tokens": 12.89
+        "DA_mean_tokens": 12.89,
+        "Number": 600,
+        "z-test": 14.806312582903177,
+        "p": 0.0,
+        "Significance": "Positive"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -360,7 +458,11 @@
         "Aggregated_SC": -0.3629,
         "cot_gain": 0.06920000000000001,
         "CoT_mean_tokens": 661.04,
-        "DA_mean_tokens": 5.86
+        "DA_mean_tokens": 5.86,
+        "Number": 448,
+        "z-test": 2.601501215239627,
+        "p": 0.009281673627609344,
+        "Significance": "Positive"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -371,7 +473,11 @@
         "Aggregated_SC": 0.2386,
         "cot_gain": 0.05820000000000003,
         "CoT_mean_tokens": 282.26,
-        "DA_mean_tokens": 4.03
+        "DA_mean_tokens": 4.03,
+        "Number": 1204,
+        "z-test": 2.87838521493537,
+        "p": 0.003997167151145842,
+        "Significance": "Positive"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -382,7 +488,11 @@
         "Aggregated_SC": 0.1458,
         "cot_gain": 0.06709999999999999,
         "CoT_mean_tokens": 262.88,
-        "DA_mean_tokens": 4.74
+        "DA_mean_tokens": 4.74,
+        "Number": 2400,
+        "z-test": 4.816148744963573,
+        "p": 1.463554428537961e-06,
+        "Significance": "Positive"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -393,7 +503,11 @@
         "Aggregated_SC": -0.0385,
         "cot_gain": -0.06790000000000007,
         "CoT_mean_tokens": 258.51,
-        "DA_mean_tokens": 6.16
+        "DA_mean_tokens": 6.16,
+        "Number": 2400,
+        "z-test": -4.7463527446927,
+        "p": 2.0711738384360245e-06,
+        "Significance": "Negative"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -404,7 +518,11 @@
         "Aggregated_SC": -0.7586,
         "cot_gain": 0.03159999999999996,
         "CoT_mean_tokens": 329.93,
-        "DA_mean_tokens": 4.69
+        "DA_mean_tokens": 4.69,
+        "Number": 1172,
+        "z-test": 2.1387857228442555,
+        "p": 0.032453026270504726,
+        "Significance": "Positive"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -415,7 +533,11 @@
         "Aggregated_SC": -0.7571,
         "cot_gain": 0.009299999999999975,
         "CoT_mean_tokens": 320.3,
-        "DA_mean_tokens": 4.68
+        "DA_mean_tokens": 4.68,
+        "Number": 2376,
+        "z-test": 1.134118816233758,
+        "p": 0.256744711822833,
+        "Significance": "None"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -426,7 +548,11 @@
         "Direct_Answer_Acc": 0.5569,
         "cot_gain": -0.01319999999999999,
         "CoT_mean_tokens": 543.52,
-        "DA_mean_tokens": 4.18
+        "DA_mean_tokens": 4.18,
+        "Number": 756,
+        "z-test": -0.5158918071667645,
+        "p": 0.6059299765217689,
+        "Significance": "None"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -437,7 +563,11 @@
         "Aggregated_SC": -0.4341,
         "cot_gain": -0.0010000000000000009,
         "CoT_mean_tokens": 426.53,
-        "DA_mean_tokens": 5.17
+        "DA_mean_tokens": 5.17,
+        "Number": 1009,
+        "z-test": -0.044957418933809806,
+        "p": 0.9641412493814736,
+        "Significance": "None"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -448,7 +578,11 @@
         "Aggregated_SC": -0.8655,
         "cot_gain": -0.017199999999999993,
         "CoT_mean_tokens": 306.96,
-        "DA_mean_tokens": 4.32
+        "DA_mean_tokens": 4.32,
+        "Number": 1221,
+        "z-test": -0.9519935789445543,
+        "p": 0.34110023834574,
+        "Significance": "None"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -459,7 +593,11 @@
         "Aggregated_SC": -0.6396,
         "cot_gain": -0.01419999999999999,
         "CoT_mean_tokens": 308.52,
-        "DA_mean_tokens": 4.08
+        "DA_mean_tokens": 4.08,
+        "Number": 1838,
+        "z-test": -1.1380734549449298,
+        "p": 0.25508981135076625,
+        "Significance": "None"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -470,7 +608,11 @@
         "Aggregated_SC": -0.534,
         "cot_gain": 0.005600000000000049,
         "CoT_mean_tokens": 308.74,
-        "DA_mean_tokens": 4.97
+        "DA_mean_tokens": 4.97,
+        "Number": 1954,
+        "z-test": 0.3830338990065519,
+        "p": 0.7016946295278368,
+        "Significance": "None"
     },
     {
         "Model": "Phi-3.5-mini-instruct",
@@ -481,18 +623,11 @@
         "Aggregated_SC": -0.7711,
         "cot_gain": 0.015700000000000047,
         "CoT_mean_tokens": 272.98,
-        "DA_mean_tokens": 4.05
-    },
-    {
-        "Model": "Phi-3.5-mini-instruct",
-        "Benchmark": "sst-2",
-        "Direct_Answer_Acc": 0.9232,
-        "CoT_Acc": 0.914,
-        "Instance_SC": -0.1491,
-        "Aggregated_SC": -0.6284,
-        "cot_gain": -0.009199999999999986,
-        "CoT_mean_tokens": 199.85,
-        "DA_mean_tokens": 4.0
+        "DA_mean_tokens": 4.05,
+        "Number": 2290,
+        "z-test": 1.2216310233090688,
+        "p": 0.2218471913040001,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -503,7 +638,11 @@
         "Aggregated_SC": 0.247,
         "cot_gain": 0.6695000000000001,
         "CoT_mean_tokens": 218.91,
-        "DA_mean_tokens": 11.51
+        "DA_mean_tokens": 11.51,
+        "Number": 1319,
+        "z-test": 34.42214993928238,
+        "p": 0.0,
+        "Significance": "Positive"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -514,7 +653,11 @@
         "Aggregated_SC": 0.3061,
         "cot_gain": 0.49500000000000005,
         "CoT_mean_tokens": 118.16,
-        "DA_mean_tokens": 7.01
+        "DA_mean_tokens": 7.01,
+        "Number": 600,
+        "z-test": 18.13159444122695,
+        "p": 0.0,
+        "Significance": "Positive"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -525,7 +668,11 @@
         "Aggregated_SC": -0.3422,
         "cot_gain": -0.03350000000000003,
         "CoT_mean_tokens": 767.19,
-        "DA_mean_tokens": 7.78
+        "DA_mean_tokens": 7.78,
+        "Number": 448,
+        "z-test": -1.0893476365038945,
+        "p": 0.2760006133582067,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -536,7 +683,11 @@
         "Aggregated_SC": 0.5058,
         "cot_gain": 0.08800000000000008,
         "CoT_mean_tokens": 323.22,
-        "DA_mean_tokens": 4.56
+        "DA_mean_tokens": 4.56,
+        "Number": 1204,
+        "z-test": 4.330939398012264,
+        "p": 1.4847454497868284e-05,
+        "Significance": "Positive"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -547,7 +698,11 @@
         "Aggregated_SC": 0.1072,
         "cot_gain": 0.09710000000000002,
         "CoT_mean_tokens": 291.01,
-        "DA_mean_tokens": 4.0
+        "DA_mean_tokens": 4.0,
+        "Number": 2400,
+        "z-test": 7.035856322368892,
+        "p": 1.9804158313263542e-12,
+        "Significance": "Positive"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -558,7 +713,11 @@
         "Aggregated_SC": 0.0421,
         "cot_gain": 0.20079999999999998,
         "CoT_mean_tokens": 242.38,
-        "DA_mean_tokens": 4.0
+        "DA_mean_tokens": 4.0,
+        "Number": 2400,
+        "z-test": 13.92495250935548,
+        "p": 0.0,
+        "Significance": "Positive"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -569,7 +728,11 @@
         "Aggregated_SC": -0.5972,
         "cot_gain": 0.05799999999999994,
         "CoT_mean_tokens": 265.21,
-        "DA_mean_tokens": 4.03
+        "DA_mean_tokens": 4.03,
+        "Number": 1172,
+        "z-test": 3.6885108143836227,
+        "p": 0.00022557044015392158,
+        "Significance": "Positive"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -580,7 +743,11 @@
         "Aggregated_SC": -0.545,
         "cot_gain": 0.01090000000000002,
         "CoT_mean_tokens": 230.45,
-        "DA_mean_tokens": 4.07
+        "DA_mean_tokens": 4.07,
+        "Number": 2376,
+        "z-test": 1.2096940597960895,
+        "p": 0.22639631008769134,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -591,7 +758,11 @@
         "Aggregated_SC": -0.3472,
         "cot_gain": -0.015900000000000025,
         "CoT_mean_tokens": 299.08,
-        "DA_mean_tokens": 4.0
+        "DA_mean_tokens": 4.0,
+        "Number": 756,
+        "z-test": -0.6183684899915893,
+        "p": 0.5363324637601539,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -602,7 +773,11 @@
         "Instance_SC": 0.1033,
         "Aggregated_SC": -0.2613,
         "CoT_mean_tokens": 353.13,
-        "DA_mean_tokens": 3.98
+        "DA_mean_tokens": 3.98,
+        "Number": 1009,
+        "z-test": -1.5140025976349165,
+        "p": 0.1300251806603836,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -613,7 +788,11 @@
         "Aggregated_SC": -0.4229,
         "cot_gain": 0.010700000000000043,
         "CoT_mean_tokens": 224.82,
-        "DA_mean_tokens": 4.04
+        "DA_mean_tokens": 4.04,
+        "Number": 1221,
+        "z-test": 0.6014992673383472,
+        "p": 0.5475074996264642,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -624,7 +803,11 @@
         "Aggregated_SC": -0.1907,
         "cot_gain": 0.02059999999999995,
         "CoT_mean_tokens": 168.42,
-        "DA_mean_tokens": 4.02
+        "DA_mean_tokens": 4.02,
+        "Number": 1838,
+        "z-test": 1.665622399985163,
+        "p": 0.09578864673450349,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -635,7 +818,11 @@
         "Aggregated_SC": -0.6066,
         "cot_gain": 0.008199999999999985,
         "CoT_mean_tokens": 198.46,
-        "DA_mean_tokens": 4.01
+        "DA_mean_tokens": 4.01,
+        "Number": 1954,
+        "z-test": 0.5546308664428826,
+        "p": 0.5791471720181898,
+        "Significance": "None"
     },
     {
         "Model": "Llama-3.1-8B-Instruct",
@@ -646,37 +833,10 @@
         "Aggregated_SC": -0.1714,
         "cot_gain": -0.046699999999999964,
         "CoT_mean_tokens": 189.51,
-        "DA_mean_tokens": 4.31
-    },
-    {
-        "Model": "Llama-3.1-8B-Instruct",
-        "Benchmark": "sst-2",
-        "Direct_Answer_Acc": 0.9312,
-        "CoT_Acc": 0.9232,
-        "Instance_SC": -0.1713,
-        "Aggregated_SC": -0.2611,
-        "cot_gain": -0.008000000000000007,
-        "CoT_mean_tokens": 164.9,
-        "DA_mean_tokens": 4.0
-    },
-    {
-        "Model": "Llama-3.2-3B-Instruct",
-        "Benchmark": "crows",
-        "Instance_SC": -0.1538
-    },
-    {
-        "Model": "Phi-3.5-mini-instruct",
-        "Benchmark": "crows",
-        "Instance_SC": -0.3158
-    },
-    {
-        "Model": "Mistral-7B-Instruct-v0.3",
-        "Benchmark": "crows",
-        "Instance_SC": -0.1983
-    },
-    {
-        "Model": "Llama-3.1-8B-Instruct",
-        "Benchmark": "crows",
-        "Instance_SC": -0.1417
+        "DA_mean_tokens": 4.31,
+        "Number": 2290,
+        "z-test": -3.6123532251076327,
+        "p": 0.0003034308585974088,
+        "Significance": "Negative"
     }
 ]
