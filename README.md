@@ -48,7 +48,7 @@ If you find this code useful for your research, please consider citing our paper
 ```bibtex
 @inproceedings{token_signature_icml2025,
   title={Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models},
-  author={Your Author Names},
+  author={Peijie Liu, Fengli Xu, Yong Li},
   booktitle={Proceedings of the 42nd International Conference on Machine Learning (ICML)},
   year={2025}
 }
