@@ -46,9 +46,9 @@ Our work introduces a novel method to **predict Chain-of-Thought (CoT) reasoning
 If you find this code useful for your research, please consider citing our paper:
 
 ```bibtex
-@inproceedings{token_signature_icml2025,
+@article{liu2025token,
   title={Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models},
-  author={Peijie Liu, Fengli Xu, Yong Li},
-  booktitle={Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  author={Liu, Peijie and Xu, Fengli and Li, Yong},
+  journal={arXiv preprint arXiv:2506.06008},
   year={2025}
 }
