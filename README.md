@@ -7,6 +7,11 @@ This repository contains the core implementation of our ICML 2025 paper:
 
 Our work introduces a novel method to **predict Chain-of-Thought (CoT) reasoning gains** using token-level decoding features from large language models (LLMs). This repository includes all code for inference, answer extraction, and evaluation used in the paper.
 
+<img width="1686" height="570" alt="image" src="https://github.com/user-attachments/assets/278a5465-dd8e-43f1-9c5b-fe7536acb3a1" />
+
+<img width="1632" height="682" alt="image" src="https://github.com/user-attachments/assets/a20f02a1-ce67-4f30-b85c-81b54510e340" />
+
+
 ## 📂 File Structure
 
 ### 🔍 Core Inference
